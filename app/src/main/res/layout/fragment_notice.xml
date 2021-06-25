@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.NoticeFragment">
+
+        <TextView
+            android:id="@+id/my_page_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5월12일"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:layout_margin="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_search_button"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notice_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+</layout>

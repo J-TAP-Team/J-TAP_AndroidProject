@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/splash_background"
+            android:layout_height="350sp">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_margin="10sp"
+                android:background="@drawable/ic_baseline_menu_24"
+                app:menu="@menu/gallery_dialog_menu"/>
+            <ImageView
+                android:id="@+id/gallery_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gallery_image" />
+
+            <Button
+                android:id="@+id/main_gallery_like"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_baseline_favorite_24" />
+
+            <TextView
+                android:id="@+id/main_gellery_comment"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignBottom="@id/main_gallery_like"
+                android:layout_marginBottom="-20sp"
+                android:gravity="center"
+                android:layout_marginLeft="7sp"
+                android:text="@string/main_gallery_like"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_7" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/dialog_gallery_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="나의 자화상"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/dialog_gallery_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅안채웅"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="15sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_margin="15sp"
+            android:background="@color/main_background"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dialog_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"/>
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/main_search_eidt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_10"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_weight="1"
+                android:hint="댓글"/>
+            <ImageView
+                android:id="@+id/main_search_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

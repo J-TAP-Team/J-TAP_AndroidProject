@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.shortcut:data-binding:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef11c71bf9169ebd004b196a49635cf8/jetified-data-binding-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef11c71bf9169ebd004b196a49635cf8/jetified-data-binding-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef11c71bf9169ebd004b196a49635cf8/jetified-data-binding-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shortcut/data-binding/1.0.0/d77e6e68a08ade4001148cdd17f108036a6672c8/data-binding-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

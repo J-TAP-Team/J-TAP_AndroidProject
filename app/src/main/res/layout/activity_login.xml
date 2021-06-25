@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.example.justtakeanypicture.viewModel.view.LoginViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_background"
+        tools:context=".ui.register.login.LoginActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="263dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/login_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <FrameLayout
+                android:layout_margin="240dp"
+                android:layout_width="319dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:background="@drawable/login_shadow">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:text="@string/login_to_your_account"
+                    android:textColor="@color/login_text_color"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/login_marginTop"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="@dimen/login_id_button_width"
+                    android:layout_height="@dimen/login_id_button_height"
+                    android:background="@drawable/login_edittext"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="62dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/login_image_width"
+                        android:layout_height="@dimen/login_image_height"
+                        android:src="@drawable/ic_baseline_person_24"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="18dp"/>
+                    <EditText
+                        android:id="@+id/login_edit_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_string_id"
+                        android:textSize="@dimen/login_text_size"
+                        android:text="@={viewModel.email}"
+                        android:textColor="@color/login_edittext_text_color"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:layout_marginLeft="7dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/login_id_button_width"
+                    android:layout_height="@dimen/login_id_button_height"
+                    android:background="@drawable/login_edittext"
+                    android:layout_marginTop="127dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/login_image_width"
+                        android:layout_height="@dimen/login_image_height"
+                        android:src="@drawable/ic_baseline_vpn_key_24"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="18dp"/>
+                    <EditText
+                        android:id="@+id/login_edit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_string_password"
+                        android:textSize="@dimen/login_text_size"
+                        android:text="@={viewModel.password}"
+                        android:textColor="@color/login_edittext_text_color"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="7dp"/>
+                </LinearLayout>
+            </FrameLayout>
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="@dimen/login_button_width"
+                android:layout_height="@dimen/login_button_height"
+                android:background="@drawable/login_button"
+                android:layout_marginTop="437sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:onClick="@{() -> viewModel.checkLogin()}"
+                android:text="@string/login_button_text"/>
+            <TextView
+                android:id="@+id/login_text_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_text_signup"
+                android:bufferType="spannable"
+                android:onClick="@{() -> viewModel.goSignUp()}"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_marginBottom="160dp"/>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

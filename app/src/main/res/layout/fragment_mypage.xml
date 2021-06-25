@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.justtakeanypicture.viewModel.MyPageFragmentViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.MypageFragment">
+
+        <FrameLayout
+            android:layout_width="320sp"
+            android:layout_height="165sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/info_area">
+
+            <TextView
+                android:id="@+id/main_my_name"
+                android:layout_width="133dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="19sp"
+                android:layout_marginTop="93sp"
+                android:text="안녕하세요 김재원님"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/main_my_page_number_text"
+                android:layout_width="147sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="19sp"
+                android:layout_marginTop="127sp"
+                android:text="@string/main_gallery_number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_11"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/main_gallery_like"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_baseline_favorite_24" />
+
+            <TextView
+                android:id="@+id/main_gellery_comment"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignBottom="@id/main_gallery_like"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:layout_gravity="right|bottom"
+                android:text="@string/main_gallery_like"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_7" />
+            <ImageView
+                android:layout_width="173sp"
+                android:layout_height="181sp"
+                android:layout_gravity="right"
+                android:src="@drawable/pix" />
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_page_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:padding="20dp" />
+
+    </LinearLayout>
+</layout>

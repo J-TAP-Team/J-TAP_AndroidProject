@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">JustTakeAnyPicture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboarding_1_title">일단<br></br>아무 사진이나<br></br>찍으세요</string>
+    <string name="onboarding_2_title">나만의<br></br>미술관을<br></br>만들어보세요</string>
+    <string name="onboarding_3_title">다른 사람의<br></br>미술관을<br></br>구경해보세요</string>
+    <string name="onboarding_4_title">테마를 사용하여<br></br>최고의 미술관으로 거듭나보세요</string>
+    <string name="onboarding_start">START</string>
+
+    <string name="login_to_your_account">Login to your Account</string>
+    <string name="login_string_id">아이디를 입력해주세요.</string>
+    <string name="login_string_password">비밀번호를 입력해주세요.</string>
+
+    <string name="login_button_text">로그인</string>
+    <string name="login_text_signup">아직도 계정이 없으신가요? 회원가입</string>
+
+    <string name="sign_to_your_account">Create your Account</string>
+    <string name="sign_string_email">이메일을 입력해주세요.</string>
+    <string name="sign_string_id">닉네임을 입력해주세요.</string>
+    <string name="sign_string_password">비밀번호를 입력해주세요.</string>
+
+    <string name="sign_button_text">회원가입</string>
+    <string name="sign_text_login">계정이 있으신가요? 로그인</string>
+
+    <string name="main_premium">JTAP 프리미엄</string>
+    <string name="main_info_change">정보변경</string>
+    <string name="main_help">도움말</string>
+    <string name="main_logout">로그아웃</string>
+
+    <string name="main_search_edit">갤러리 검색</string>
+    <string name="main_gallery_number">23작품과 함께하고 계십니다.</string>
+    <string name="main_best_gallery">8작의 인기 게시물</string>
+    <string name="main_gallery_like">2000</string>
 </resources>

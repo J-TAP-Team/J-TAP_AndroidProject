@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.justtakeanypicture.viewModel.MainViewModel" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="140sp"
+        android:layout_height="180sp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/gallery_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gallery_image" />
+
+            <Button
+                android:id="@+id/main_gallery_like"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_baseline_favorite_24" />
+
+            <TextView
+                android:id="@+id/main_gallery_like_number"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignBottom="@id/main_gallery_like"
+                android:layout_marginBottom="-15sp"
+                android:gravity="center"
+                android:layout_marginLeft="7sp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_7" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

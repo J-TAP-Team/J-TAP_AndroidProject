@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/gallery_post_toolbar" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/splash_background"
+            android:layout_height="350sp">
+            <ImageView
+                android:id="@+id/gallery_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gallery_image" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/dialog_gallery_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:hint="제목"
+            android:background="@color/white"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/dialog_gallery_contents_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="내용"
+            android:background="@color/white"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="15sp"/>
+    </LinearLayout>
+
+</layout>
